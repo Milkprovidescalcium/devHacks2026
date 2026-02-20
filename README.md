@@ -1,7 +1,7 @@
 
 ## **BEFORE YOU CLONE**:  
 
-Cd to /backend/
+Cd to /backend/  
 ### Run:  
 - `python -m venv venv ` 
 - `.\venv\Scripts\activate`  
