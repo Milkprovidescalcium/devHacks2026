@@ -106,7 +106,9 @@ public class MainApp {
             while ((line = br.readLine()) != null) {
                 if (line.equalsIgnoreCase("DISTRACTED")) {
                     System.out.println("You are distracted");
-                     launchWindows();
+                     static List<JFrame> frames = new ArrayList<>();
+                            SwingUtilities.invokeLater(() -> 
+                            launchWindows());
                 } else if (line.equalsIgnoreCase("FOCUSED")) {
                     System.out.println("You are focused");
                 }
