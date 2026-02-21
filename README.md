@@ -1,21 +1,41 @@
-### Inspiration  
+#### Inspiration  
 
-Lowkey we kinda stink at lockin in, that's why we looked for solution to this real life problem. Behold, Focus Pocus!
+Lowkey we kinda stink at lockin in, that's why we looked for solution to this real life problem. Behold, Hocus Focus!
 
-### What it does  
+#### What it does  
 
+Just run and forget, dont worry about any extra inputs just input what you're working on and Hocus Focus will track your screen in 
+the background and remind you to get back on track whenever you lose focus.
 
-### How we built it
+#### How we built it
 
-### Challenges we ran into
+With a Java Jframe front-end and a Python backend with an API connection to Google Gemini.
+The front and backend's commuicate with eachother via text files, Python will handle reading the screen and 
+prompting Gemini to determine whether the user is distracted. Java will then recieve this message and send a popup
+reminder using Jframe accordingly.
 
-### Accomplishments that we're proud of
+#### Challenges we ran into
 
-### What we learned
+As first year compsci students we have limited if any experience with API's, packages, imports, and full stack development. 
+We had to do lots of research pulling from external sources in order to make this possible.
 
-### What's next for Hocus Focus -- AI Focus App  
+A large problem we have is Gemini rate limiting our request. As of today Google Gemini limits API requests to 20 per day. This gave us problems
+in testing due to us being kinda broke and not able get Gemini pro.
 
+#### Accomplishments that we're proud of
 
+Successfully connecting to an API for the first time and coming up with out makeshift "communication" between the frontend/backend using
+txt files were abong the things we learned and were proud of
+
+#### What we learned
+
+We learned alot of things about full-stack development and etc. Out of class learning is an exciting expereince
+and it's super sick to have opportunites to pursue it and we will defo be back for more Hackathons!
+
+#### What's next for Hocus Focus -- AI Focus App  
+
+probs just stuff it away in one of our laptops. I don't think this is okay to launch since it's an AI tracking your screen and I'm
+sure that comes with it's legal issues, but it's an exciting prototype and premise and who knows how far an idea can go?
 
 
 
