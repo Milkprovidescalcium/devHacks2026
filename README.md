@@ -63,5 +63,4 @@ The gemini connection is commented out since our requests have expired.
 Just cycle through these in the ai_logic.py:
 
 `gemini-2.5-flash-lite`
-`gemini-2.5-flash`
 `gemini-3.0-flash`
