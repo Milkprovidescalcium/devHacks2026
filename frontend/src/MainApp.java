@@ -37,8 +37,7 @@ public class MainApp {
         }
 
         final JLabel title = new JLabel("Hocus Focus", SwingConstants.CENTER);
-        final JTextField textField = new JTextField(20);
-        textField.setHorizontalAlignment(JTextField.CENTER);
+        final RoundedTextField textField = new RoundedTextField(20, 30);
 
         int delay = 10000;
         focusTimer = new Timer(delay, new ActionListener() {
