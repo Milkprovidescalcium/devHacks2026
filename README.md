@@ -5,7 +5,7 @@ Lowkey we kinda stink at lockin in, that's why we looked for solution to this re
 #### What it does  
 
 Just run and forget, dont worry about any extra inputs. Just input what you're working on and Hocus Focus will track your screen in 
-the background and remind you to get back on track whenever you lose focus.
+the background, reminding you to get back on track whenever you lose focus.
 
 #### How we built it
 
