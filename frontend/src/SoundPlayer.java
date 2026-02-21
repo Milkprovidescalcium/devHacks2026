@@ -19,6 +19,12 @@ public class SoundPlayer {
             
             // Start the playback
             clip.start();
+
+                       clip.addLineListener(event -> {
+                if (event.getType() == LineEvent.Type.STOP) {
+                    clip.close();
+                }
+            });
             
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             e.printStackTrace();
