@@ -43,7 +43,7 @@ sure that comes with it's legal issues, but it's an exciting prototype and premi
 
 cd to /backend/  
 ### Run:  
-- `python -m venv venv ` 
+- `python -m venv venv ` or `python3` if ur using mac/linux
 - `.\venv\Scripts\activate`  or `source venv/bin/activate.fish` or `source venv/bin/activate`
 - `pip install -r requirements.txt`
 
