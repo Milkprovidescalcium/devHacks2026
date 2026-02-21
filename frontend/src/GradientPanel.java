@@ -23,7 +23,7 @@ public class GradientPanel extends JPanel {
         squareMove.start();
 
         // square spawner
-        Timer squareSpawn = new Timer(50, e -> spawnSquare());
+        Timer squareSpawn = new Timer(50, e -> squareSpawn());
         squareSpawn.start();
     }
 
