@@ -23,7 +23,7 @@ public class GradientPanel extends JPanel {
         squareMove.start();
 
         // square spawner
-        Timer squareSpawn = new Timer(50, e -> squareSpawn());
+        Timer squareSpawn = new Timer(50, e -> squareType());
         squareSpawn.start();
     }
 
@@ -41,7 +41,7 @@ public class GradientPanel extends JPanel {
             square.alpha -= 0.05f;     // fade out
 
             // remove if invisible or too small
-            if (sq.alpha <= 0 || sq.size <= 0) {
+            if (square.alpha <= 0 || square.size <= 0) {
                 toRemove.add(square);
             }
         }
