@@ -1,19 +1,20 @@
-## Inspiration  
+### Inspiration  
 
 Lowkey we kinda stink at lockin in, that's why we looked for solution to this real life problem. Behold, Focus Pocus!
 
-## What it does  
+### What it does  
 
 
-## How we built it
+### How we built it
 
-## Challenges we ran into
+### Challenges we ran into
 
-## Accomplishments that we're proud of
+### Accomplishments that we're proud of
 
-## What we learned
+### What we learned
 
-## What's next for Hocus Focus -- AI Focus App  
+### What's next for Hocus Focus -- AI Focus App  
+
 
 
 
