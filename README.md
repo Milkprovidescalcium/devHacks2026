@@ -53,7 +53,7 @@ for debugging: `backend\venv\Scripts\python.exe backend\bridge.py`
 
 The .bat file is for Windows and the .sh is for Linux but only for fish terminals cuz that's what I use screwwww bash
 
-The run_appTest.sh is like the run_app.sh but is better cuz the assets work so just run that one not the old one...
+Use the corrosponding run_app to yknow run the app. Make sure to chmod it on Linux and such
 
 Nico doesnt use the pom.xml I think but Aaron does so just keep it ig  
 
