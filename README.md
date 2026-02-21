@@ -39,7 +39,7 @@ sure that comes with it's legal issues, but it's an exciting prototype and premi
 
 
 
-## **BEFORE YOU CLONE**:  
+## **AFTER YOU CLONE**:  
 
 cd to /backend/  
 ### Run:  
