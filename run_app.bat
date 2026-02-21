@@ -12,7 +12,8 @@ if %errorlevel% neq 0 (
 )
 
 echo [3/3] Launching Java Frontend...
-java -cp frontend\src MainApp
+REM Include resources folder on the classpath so getResource("/icon.png") and sounds load
+java -cp frontend\src;frontend\resources MainApp
 
 echo Shutting down Python...
 :: This kills the python process started earlier
