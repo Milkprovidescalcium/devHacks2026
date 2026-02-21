@@ -14,7 +14,6 @@ public class MainApp {
     private static FileChannel lockChannel;
     private static FileLock lock;
     private static String soundFilePath = "save-sfx-made-with-Voicemod.mp3";
-
     private static String currentGoal = "";
     private static Timer focusTimer;
 
@@ -38,6 +37,7 @@ public class MainApp {
 
         final JLabel title = new JLabel("Hocus Focus", SwingConstants.CENTER);
         final RoundedTextField textField = new RoundedTextField(20, 30);
+        textField.setHorizontalAlignment(JTextField.LEFT);
 
         int delay = 10000;
         focusTimer = new Timer(delay, new ActionListener() {
@@ -68,7 +68,7 @@ public class MainApp {
             }
         });
 
-           ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.MAGENTA, Color.PINK);
+        ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.MAGENTA, Color.PINK);
         content.setLayout(new GridBagLayout()); // Center everything
 
         title.setFont(new Font("Arial", Font.BOLD, 40));
@@ -89,7 +89,7 @@ public class MainApp {
         content.add(centerPanel); // GridBagLayout centers it by default
 
         frame.setContentPane(content);
-        frame.setSize(600, 400);
+        frame.setSize(600, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
@@ -147,8 +147,7 @@ public class MainApp {
 
     private static void launchWindows() {
 
-
-            String[] messages = {
+        String[] messages = {
                 "Take deep breaths.",
                 "Such a good job!.",
                 "One step at a time.",
@@ -158,7 +157,7 @@ public class MainApp {
                 "Keep on going!",
                 "You're almost there!",
                 "LOCK IN!!!!"
-            };
+        };
 
         List<JFrame> frames = new ArrayList<>();
         java.util.Collections.shuffle(java.util.Arrays.asList(messages));
