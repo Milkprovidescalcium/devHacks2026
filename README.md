@@ -41,7 +41,7 @@ sure that comes with it's legal issues, but it's an exciting prototype and premi
 
 ## **BEFORE YOU CLONE**:  
 
-Cd to /backend/  
+cd to /backend/  
 ### Run:  
 - `python -m venv venv ` 
 - `.\venv\Scripts\activate`  or `source venv/bin/activate.fish`
@@ -49,4 +49,6 @@ Cd to /backend/
 
 
 
-for debugging: `backend\venv\Scripts\python.exe backend\bridge.py`
+for debugging: `backend\venv\Scripts\python.exe backend\bridge.py`  
+
+The .bat file is for Windows and the .sh is for Linux but only for fish terminals cuz that's what I use screwwww bash
