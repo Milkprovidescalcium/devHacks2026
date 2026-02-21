@@ -13,7 +13,7 @@ public class MainApp {
     private static FileOutputStream lockStream;
     private static FileChannel lockChannel;
     private static FileLock lock;
-    private static String soundFilePath = "/save-sfx-made-with-Voicemod.wav";
+    private static String soundFilePath = "/alert";
     private static String currentGoal = "";
     private static Timer focusTimer;
 
