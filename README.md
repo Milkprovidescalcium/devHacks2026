@@ -62,5 +62,5 @@ Nico doesnt use the pom.xml I think but Aaron does so just keep it ig
 The gemini connection is commented out since our requests have expired.
 Just cycle through these in the ai_logic.py:
 
-`gemini-2.5-flash-lite`
+`gemini-2.5-flash-lite` or
 `gemini-3.0-flash`
