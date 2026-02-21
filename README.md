@@ -56,3 +56,12 @@ The .bat file is for Windows and the .sh is for Linux but only for fish terminal
 The run_appTest.sh is like the run_app.sh but is better cuz the assets work so just run that one not the old one...
 
 Nico doesnt use the pom.xml I think but Aaron does so just keep it ig
+
+
+####Note:  
+The gemini connection is commented out since our requests have expired.
+Just cycle through these:
+
+`gemini-2.5-flash-lite`
+`gemini-2.5-flash`
+`gemini-3.0-flash`
