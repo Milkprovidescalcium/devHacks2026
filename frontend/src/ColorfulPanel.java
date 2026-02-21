@@ -27,12 +27,12 @@ public class ColorfulPanel extends JPanel {
         squareMove.start();
 
         // square spawner
-        Timer squareSpawn = new Timer(50, e -> squareType());
+        Timer squareSpawn = new Timer(100, e -> squareType());
         squareSpawn.start();
     }
 
         private void squareType() {
-        int size = rand.nextInt(30) + 20; // random size 20-50
+        int size = rand.nextInt(10) + 20; // random size 20-50
         int x = rand.nextInt(Math.max(1, getWidth() - size)); // randomized positioning
         squares.add(new Square(x, getHeight(), size));
     }
@@ -41,8 +41,8 @@ public class ColorfulPanel extends JPanel {
         List<Square> toRemove = new ArrayList<>();
         for (Square square : squares) {
             square.y -= square.speed;       // float upward
-            square.size -= 0.5f;        // shrink
-            square.alpha -= 0.05f;     // fade out
+            square.size -= 0.01f;        // shrink
+            square.alpha -= 0.0005f;     // fade out
 
             // remove if useless
             if (square.alpha <= 0 || square.size <= 0) {
@@ -93,7 +93,7 @@ public class ColorfulPanel extends JPanel {
             this.y = y;
             this.size = size;
             this.alpha = 0.6f;                      // initial opacity
-            this.speed = (float) (Math.random() * 1.5) + 3.0f; // FASTER THAN LIGHT!
+            this.speed = (float) (Math.random() * 0.5) + 0.18f; // FASTER THAN LIGHT!
         }
 }
 
