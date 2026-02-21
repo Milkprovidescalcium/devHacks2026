@@ -13,7 +13,7 @@ public class MainApp {
     private static FileOutputStream lockStream;
     private static FileChannel lockChannel;
     private static FileLock lock;
-    private static String soundFilePath = "save-sfx-made-with-Voicemod.mp3";
+    private static String soundFilePath = "/save-sfx-made-with-Voicemod.wav";
     private static String currentGoal = "";
     private static Timer focusTimer;
 
@@ -28,11 +28,11 @@ public class MainApp {
 
         JFrame frame = new JFrame("Hocus Focus");
 
-        URL iconUrl = MainApp.class.getResource("/resources/icon.png");
+        URL iconUrl = MainApp.class.getResource("/icon.png");
         if (iconUrl != null) {
             frame.setIconImage(new ImageIcon(iconUrl).getImage());
         } else {
-            System.err.println("Warning: icon.png not found.");
+            System.err.println("Warning: icon.png not found on classpath.");
         }
 
         final JLabel title = new JLabel("Hocus Focus", SwingConstants.CENTER);
@@ -50,7 +50,7 @@ public class MainApp {
                 }
             }
         });
-
+        
         textField.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
