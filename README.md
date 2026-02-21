@@ -25,7 +25,7 @@ in testing due to us being kinda broke and not able get Gemini pro.
 #### Accomplishments that we're proud of
 
 Successfully connecting to an API for the first time and coming up with our makeshift "communication" between the frontend/backend using
-txt files were abong the things we learned and were proud of
+txt files were among the things we learned and were proud of
 
 #### What we learned
 
