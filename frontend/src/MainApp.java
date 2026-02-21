@@ -137,18 +137,18 @@ public class MainApp {
 
     private static void launchWindows() {
 
-        String[] messages = {
-                "Take it deep.",
-                "Such a good boy.",
-                "One inch at a time.",
-                "Yummy Cummy!",
-                "Stay on gooning!",
-                "Open wide!",
-                "Deep breaths.",
-                "Keep going!",
-                "I'm almost there!",
-                "I'm ARRIVING!!!."
-        };
+
+            String[] messages = {
+                "Take deep breaths.",
+                "Such a good job!.",
+                "One step at a time.",
+                "STay Focused!",
+                "Stay on task!",
+                "Open mind.",
+                "Keep on going!",
+                "You're almost there!",
+                "LOCK IN!!!!"
+            };
 
         List<JFrame> frames = new ArrayList<>();
         java.util.Collections.shuffle(java.util.Arrays.asList(messages));
