@@ -9,7 +9,7 @@ public class WindowManager {
         JFrame frame = new JFrame("Hocus Focus");
         frame.setSize(width, height);
         frame.setLocation(x, y);
-        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
         GradientPanel panel = new GradientPanel(c1, c2);
 
