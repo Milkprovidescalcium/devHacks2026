@@ -13,15 +13,15 @@ def check_user_focus(image_path,user_goal): #reads the screenshot and sends to t
     try:
         image_data = file.read()
 
-        prompt = f"Goal: {user_goal}. Answer only 'FOCUS' or 'DISTRACTED'." #tells gemini.. to answer in either of those one word answers. The f means its just a printf basically
-        response = client.models.generate_content(
-            model="gemini-flash-latest",
-            contents = [prompt,{"inline_data": {"data":image_data,"mime_type":"image/jpeg"}}] #mime_type says what filetype it is. jpeg in this case
-        )
-        return response.text.strip()
+        # prompt = f"Goal: {user_goal}. Answer only 'FOCUS' or 'DISTRACTED'." #tells gemini.. to answer in either of those one word answers. The f means its just a printf basically
+        # response = client.models.generate_content(
+        #     model="gemini-2.5-flash-lite",
+        #     contents = [prompt,{"inline_data": {"data":image_data,"mime_type":"image/jpeg"}}] #mime_type says what filetype it is. jpeg in this case
+        # )
+        # return response.text.strip()
 
-        # import random
-        # return random.choice(["FOCUS", "DISTRACTED"]) # <-- google gemini api is down... just do this fornow
+        import random
+        return random.choice(["FOCUS", "DISTRACTED"]) # <-- WHEN RATE LIMIT IS HIT... Do this
 
     finally:
         file.close()
