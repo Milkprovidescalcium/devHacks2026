@@ -68,16 +68,25 @@ public class MainApp {
             }
         });
 
-        ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.MAGENTA, Color.PINK);
-        content.setLayout(new BorderLayout(10, 10));
-        title.setFont(new Font("Arial", Font.BOLD, 24));
-        title.setForeground(Color.WHITE);
-        content.add(title, BorderLayout.NORTH);
+           ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.MAGENTA, Color.PINK);
+        content.setLayout(new GridBagLayout()); // Center everything
 
-        JPanel centerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        title.setFont(new Font("Arial", Font.BOLD, 40));
+        title.setForeground(Color.WHITE);
+
+        JPanel centerPanel = new JPanel();
         centerPanel.setOpaque(false);
+        centerPanel.setLayout(new BoxLayout(centerPanel, BoxLayout.Y_AXIS));
+
+        title.setAlignmentX(Component.CENTER_ALIGNMENT);
+        textField.setAlignmentX(Component.CENTER_ALIGNMENT);
+        // textField.setMaximumSize(textField.getPreferredSize()); // Prevent stretching
+
+        centerPanel.add(title);
+        centerPanel.add(Box.createRigidArea(new Dimension(0, 15))); // spacing
         centerPanel.add(textField);
-        content.add(centerPanel, BorderLayout.CENTER);
+
+        content.add(centerPanel); // GridBagLayout centers it by default
 
         frame.setContentPane(content);
         frame.setSize(600, 400);
