@@ -20,11 +20,11 @@ public class GradientPanel extends JPanel {
             updateSquares();
             repaint();
         });
-        animationTimer.start();
+        squareMove.start();
 
         // square spawner
         Timer squareSpawn = new Timer(50, e -> spawnSquare());
-        spawnTimer.start();
+        squareSpawn.start();
     }
 
     private void squareType() {
