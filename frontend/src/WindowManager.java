@@ -4,7 +4,8 @@ import java.util.List;
 
 public class WindowManager {
 
-    public static void showWindow(String message, Color c1, Color c2, int x, int y, int width, int height, JLabel timerLabel, List<JFrame> frames) {
+    public static void showWindow(String message, Color c1, Color c2, int x, int y, int width, int height,
+            JLabel timerLabel, List<JFrame> frames) {
         JFrame frame = new JFrame("Hocus Focus");
         frame.setSize(width, height);
         frame.setLocation(x, y);
@@ -23,7 +24,7 @@ public class WindowManager {
         panel.add(label, gbc);
 
         gbc.gridy = 1;
-        panel.add(closeAll, gbc);
+        // panel.add(closeAllWindows, gbc);
 
         gbc.gridy = 2;
         panel.add(timerLabel, gbc);
@@ -35,7 +36,7 @@ public class WindowManager {
 
     public static void startCountdown(JLabel timerLabel, int seconds, List<JFrame> frames) {
         Timer timer = new Timer(1000, null);
-        final int[] count = {seconds};
+        final int[] count = { seconds };
 
         timer.addActionListener(e -> {
             count[0]--;
@@ -55,6 +56,6 @@ public class WindowManager {
             frame.dispose();
         }
         frames.clear();
-        System.exit(0);
+        // System.exit(0);
     }
 }
