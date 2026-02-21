@@ -17,13 +17,6 @@ public class WindowManager {
         label.setFont(new java.awt.Font("SansSerif", java.awt.Font.BOLD, 20));
         label.setHorizontalAlignment(SwingConstants.CENTER);
 
-        JButton closeAll = new JButton("Close All");
-        closeAll.setOpaque(true);
-        closeAll.setBorderPainted(false);
-        closeAll.setBackground(Color.WHITE);
-        closeAll.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        closeAll.addActionListener(e -> closeAllWindows(frames));
-
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridy = 0;
         gbc.insets = new Insets(10, 10, 10, 10);
