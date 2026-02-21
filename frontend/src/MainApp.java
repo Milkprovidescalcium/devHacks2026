@@ -69,7 +69,7 @@ public class MainApp {
             }
         });
 
-        ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.PINK);
+        ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.MAGENTA, Color.PINK);
         content.setLayout(new BorderLayout(10, 10));
         title.setFont(new Font("Arial", Font.BOLD, 24));
         title.setForeground(Color.WHITE);
