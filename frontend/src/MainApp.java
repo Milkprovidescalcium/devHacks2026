@@ -28,15 +28,15 @@ public class MainApp {
 
         JFrame frame = new JFrame("Hocus Focus");
 
-        URL iconUrl = MainApp.class.getResource("/icon.png");
+        URL iconUrl = MainApp.class.getResource("/resources/icon.png");
         if (iconUrl != null) {
             frame.setIconImage(new ImageIcon(iconUrl).getImage());
         } else {
-            System.err.println("Warning: icon.png not found on classpath.");
+            System.err.println("Warning: icon.png not found.");
         }
 
         final JLabel title = new JLabel("Hocus Focus", SwingConstants.CENTER);
-        final RoundedTextField textField = new RoundedTextField(20, 30);
+        final RoundedTextField textField = new RoundedTextField(20, 30, "What are we hocusing focusing on?");
         textField.setHorizontalAlignment(JTextField.LEFT);
 
         int delay = 10000;
@@ -71,7 +71,7 @@ public class MainApp {
         ColorfulPanel content = new ColorfulPanel(Color.BLUE, Color.MAGENTA, Color.PINK);
         content.setLayout(new GridBagLayout()); // Center everything
 
-        title.setFont(new Font("Arial", Font.BOLD, 40));
+        title.setFont(new Font("Arial", Font.BOLD, 60));
         title.setForeground(Color.WHITE);
 
         JPanel centerPanel = new JPanel();
@@ -87,14 +87,16 @@ public class MainApp {
         centerPanel.add(textField);
 
         content.add(centerPanel); // GridBagLayout centers it by default
-
+        content.setFocusable(true);
         frame.setContentPane(content);
         frame.setSize(600, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
-        textField.requestFocusInWindow();
+        SwingUtilities.invokeLater(() -> content.requestFocusInWindow());
+        textField.getCaret().setBlinkRate(0); // stops blinking but keeps it visible
+        // textField.requestFocusInWindow();
     }
 
     public static void writeGoal(String goal) {
