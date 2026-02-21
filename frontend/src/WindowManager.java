@@ -10,6 +10,7 @@ public class WindowManager {
         frame.setSize(width, height);
         frame.setLocation(x, y);
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        frame.setAlwaysOnTop(true)
 
         GradientPanel panel = new GradientPanel(c1, c2);
 
