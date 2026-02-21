@@ -4,9 +4,26 @@ import os
 from vision_tracker import capture_screen
 from ai_logic import check_user_focus
 
+import atexit
+
+
 GOAL_FILE = "goals.txt"
 
 VERDICT_FILE = "verdict.txt"
+
+def clear_files():
+    files_to_clear = [GOAL_FILE, VERDICT_FILE]
+    for filename in files_to_clear:
+        try:
+            with open(filename, 'w') as f:
+                f.truncate(0) 
+            print(f"Successfully cleared {filename}")
+        except FileNotFoundError:
+            pass
+
+atexit.register(clear_files)
+
+
 
 def run_bridge():
     print("Python bridge is active")
