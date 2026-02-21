@@ -13,6 +13,7 @@ public class MainApp {
     private static FileOutputStream lockStream;
     private static FileChannel lockChannel;
     private static FileLock lock;
+    private static String soundFilePath = "save-sfx-made-with-Voicemod.mp3";
 
     private static String currentGoal = "";
     private static Timer focusTimer;
@@ -111,6 +112,7 @@ public class MainApp {
                 if (line.equalsIgnoreCase("RESULT:DISTRACTED")) {
                     System.out.println("You are distracted");
                     launchWindows();
+                    SoundPlayer.playSound(soundFilePath);
                     file.delete();
                 } else if (line.equalsIgnoreCase("RESULT:FOCUS")) {
                     System.out.println("You are focused");
