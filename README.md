@@ -9,4 +9,4 @@ Cd to /backend/
 
 
 
-for debugging: backend\venv\Scripts\python.exe backend\bridge.py
+for debugging: `backend\venv\Scripts\python.exe backend\bridge.py`
