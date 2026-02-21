@@ -36,9 +36,9 @@ public class GradientPanel extends JPanel {
     private void updateSquares() {
         List<Square> toRemove = new ArrayList<>();
         for (Square square : squares) {
-            square.y -= square.speed;       // float upward
-            square.size -= 0.5f;        // shrink
-            square.alpha -= 0.05f;     // fade out
+            square.y -= square.speed; // float upward
+            square.size -= 0.5f; // shrink
+            square.alpha -= 0.05f; // fade out
 
             // remove if invisible or too small
             if (square.alpha <= 0 || square.size <= 0) {
@@ -79,7 +79,7 @@ public class GradientPanel extends JPanel {
             this.x = x;
             this.y = y;
             this.size = size;
-            this.alpha = 0.6f;                      // initial opacity
+            this.alpha = 0.6f; // initial opacity
             this.speed = (float) (Math.random() * 1.5) + 3.0f; // FASTER THAN LIGHT!
         }
     }
